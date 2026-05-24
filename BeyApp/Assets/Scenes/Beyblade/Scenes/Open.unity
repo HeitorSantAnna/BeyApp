@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030266735}
   - component: {fileID: 1030266734}
+  - component: {fileID: 1030266736}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -148,7 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932b935898abf95488e641934e615047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uIDocument: {fileID: 1688702209}
 --- !u!4 &1030266735
 Transform:
   m_ObjectHideFlags: 0
@@ -164,6 +164,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030266736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030266733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541b9a9a31c6e154f9f0ec6a4aa32907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 0}
+  uIDocument: {fileID: 0}
 --- !u!1 &1688702206
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +189,7 @@ GameObject:
   - component: {fileID: 1688702208}
   - component: {fileID: 1688702209}
   m_Layer: 5
-  m_Name: OpenDocument
+  m_Name: DocumentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

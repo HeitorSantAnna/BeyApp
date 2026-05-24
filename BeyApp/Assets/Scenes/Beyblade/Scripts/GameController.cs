@@ -4,45 +4,62 @@ using UnityEngine.UIElements;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] UIDocument uIDocument;
+    public static UIDocument uIDocument;
 
     [SerializeField] Button edit, create, view, exit;
 
     void Start()
     {
-        edit = uIDocument.rootVisualElement.Q<Button>("Edit");
+        if(SceneManager.GetActiveScene().name == "Open")
+        {
+            edit = uIDocument.rootVisualElement.Q<Button>("Edit");
 
-        create = uIDocument.rootVisualElement.Q<Button>("Create");
+            create = uIDocument.rootVisualElement.Q<Button>("Create");
 
-        view = uIDocument.rootVisualElement.Q<Button>("View");
+            view = uIDocument.rootVisualElement.Q<Button>("View");
 
-        exit = uIDocument.rootVisualElement.Q<Button>("Exit");
+            exit = uIDocument.rootVisualElement.Q<Button>("Exit");
 
-        edit.clicked += Editer;
+            edit.clicked += Editer;
 
-        create.clicked += Creator;
+            create.clicked += Creator;
 
-        view.clicked += Viwer;
+            view.clicked += Viwer;
 
-        exit.clicked += Exit;
+            exit.clicked += Exit;
+
+            Debug.Log($"Entrou no {SceneManager.GetActiveScene().name}");
+        }
+        else if(SceneManager.GetActiveScene().name == "Creator")
+        {
+
+            Debug.Log($"Entrou no {SceneManager.GetActiveScene().name}");
+        }
+        else if(SceneManager.GetActiveScene().name == "Editor")
+        {
+
+            Debug.Log($"Entrou no {SceneManager.GetActiveScene().name}");
+        }
+        else if(SceneManager.GetActiveScene().name == "Viwer")
+        {
+
+            Debug.Log($"Entrou no {SceneManager.GetActiveScene().name}");
+        }
     }
 
     void Editer()
     {
-        //SceneManager.LoadScene("");
-        Debug.Log("O botão Editer foi apertado");
+        SceneManager.LoadScene("Editor");
     }
 
     void Creator()
     {
-        //SceneManager.LoadScene("");
-        Debug.Log("O botão Creator foi apertado");
+        SceneManager.LoadScene("Creator");
     }
 
     void Viwer()
     {
-        //SceneManager.LoadScene("");
-        Debug.Log("O botão Viwer foi apertado");
+        SceneManager.LoadScene("Viwer");
     }
 
     void Exit()
