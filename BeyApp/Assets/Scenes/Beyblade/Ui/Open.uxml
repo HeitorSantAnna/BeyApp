@@ -1,0 +1,10 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(13, 96, 69);" />
+    <engine:Label text="vyuvuvu" name="Titlle" style="position: absolute; top: 10%; left: 0; right: 0; -unity-text-align: middle-center; font-size: 80px; -unity-font-style: bold;" />
+    <engine:VisualElement name="GroupButtons" style="flex-grow: 1; position: absolute; top: 30%; left: 5%; right: 5%; bottom: 30%;">
+        <engine:Button text="Editar Time" name="Create" style="font-size: 50px; top: 25%; left: 10%; right: 10%; bottom: 65%; position: absolute; -unity-font-style: bold;" />
+        <engine:Button text="Editar Time" name="Edit" style="font-size: 50px; top: 45%; left: 10%; right: 10%; bottom: 45%; position: absolute; -unity-font-style: bold;" />
+        <engine:Button text="Mostrar time" name="View" style="font-size: 50px; top: 65%; left: 10%; right: 10%; bottom: 25%; position: absolute; -unity-font-style: bold;" />
+    </engine:VisualElement>
+    <engine:Button text="Sair" name="Exit" style="position: absolute; top: 90%; left: 10%; right: 10%; bottom: 5%; font-size: 35px; -unity-font-style: bold;" />
+</engine:UXML>
