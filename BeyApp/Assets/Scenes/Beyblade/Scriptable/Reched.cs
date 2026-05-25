@@ -9,8 +9,4 @@ public class Reched : ScriptableObject
     public int height;
 
     public int number;
-
-    public string color;
-
-    public List<string> Bybeys = new List<string>();
 }
