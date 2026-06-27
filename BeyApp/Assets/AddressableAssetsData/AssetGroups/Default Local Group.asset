@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: d4949e89dc369114e8436452b306066f
-  m_SerializeEntries:
-  - m_GUID: 06d40901e4ec8564e923741f0936c725
-    m_Address: Assets/Scenes/Beyblade/Scriptable/Object
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - RechedObjects
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 12425636a0ca2ce4e8fa2bae33642c61, type: 2}
   m_SchemaSet:
