@@ -14,7 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: d4949e89dc369114e8436452b306066f
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0b97b291c65218c3787490496a8b8149
+    m_Address: Assets/Parts/Reched/Double
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c2ac28116b8b6d25b731fb1039074b3
+    m_Address: Assets/Parts/Reched/Simple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3372405210a1b2784a9827f7be2e5e9d
+    m_Address: Assets/Parts/Bit/OnliBit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c38f487e854b85c4a788fa5f9a7f699
+    m_Address: Assets/Parts/Layer/UX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c2c751c0e6e01df5af80845d9aaf9b6
+    m_Address: Assets/Parts/Bit/BitMReched
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b424d769e1415a018edd464cd9bb18c
+    m_Address: Assets/Parts/Layer/CX/CLayer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aecc86cc195085e9a8e7d0e329e9ed48
+    m_Address: Assets/Parts/Layer/CX/AssistBlade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eae540febb1c6c6bb991e2ba18deabbf
+    m_Address: Assets/Parts/Layer/BX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 12425636a0ca2ce4e8fa2bae33642c61, type: 2}
   m_SchemaSet:
