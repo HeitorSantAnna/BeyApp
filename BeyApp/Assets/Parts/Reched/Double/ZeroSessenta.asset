@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f065a8221f40e033fa18993217ae600d, type: 3}
-  m_Name: Teste0 3
+  m_Name: ZeroSessenta
   m_EditorClassIdentifier: 
   nameParts: 
+  sprite: {fileID: 0}
   ID: 0
-  Sreched: 0
-  number: 2
-  IsSimple: 1
-  heightD: 0
-  heightS: 85
+  IsUx: 0
+  IsExpend: 0
+  IsBx: 0
+  number: 0
+  IsSimple: 0
+  heightD: 60
+  heightS: 0

@@ -3,8 +3,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "BeysParts/Reched")]
 public class Reched : Beys
 {
-    public SystemReched Sreched;
-
     public Number number;
 
     public bool IsSimple;
@@ -26,12 +24,6 @@ public class Reched : Beys
     }
 }
 
-public enum SystemReched
-{
-    Simple,
-    Double
-}
-
 public enum Number
 {
     Zero = 0,
@@ -42,7 +34,6 @@ public enum Number
     Cinco = 5,
     Seis = 6,
     Sete = 7,
-    Oito = 8,
     Nove = 9
 }
 
