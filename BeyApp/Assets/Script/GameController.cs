@@ -6,54 +6,49 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] List<Beys> bladeS = new List<Beys>();
+    [SerializeField] List<Beys> Mainblade = new List<Beys>();
 
-    [SerializeField] List<Beys> bladeU = new List<Beys>();
+    [SerializeField] List<Beys> Overblade = new List<Beys>();
 
-    [SerializeField] List<Beys> bladeO = new List<Beys>();
+    [SerializeField] List<Beys> Assistblade = new List<Beys>();
 
-    [SerializeField] List<Beys> bladeM = new List<Beys>();
+    [SerializeField] List<Beys> UBlade = new List<Beys>();
 
-    [SerializeField] List<Beys> bladeA = new List<Beys>();
+    [SerializeField] List<Beys> BBlade = new List<Beys>();
 
 
     //Aqui vai ficar a parte em que o sistema vai colocar os scriptable objects dentro das listas atraves do addressable
     void Awake()
     {
-        Addressables.LoadAssetsAsync<Beys>("BBlade", Mblades => bladeS.Add(Mblades)).Completed += OnLoaded;
-        Addressables.LoadAssetsAsync<Beys>("UBlade", bladeu => bladeU.Add(bladeu)).Completed += OnLoaded;
-        Addressables.LoadAssetsAsync<Beys>("Over", Oblade => bladeO.Add(Oblade)).Completed += OnLoaded;
-        Addressables.LoadAssetsAsync<Beys>("Assist", Ablade => bladeA.Add(Ablade)).Completed += OnLoaded;
-        Addressables.LoadAssetsAsync<Beys>("MainBlade", Mblade => bladeM.Add(Mblade)).Completed += OnLoaded;
+        //Addressables.LoadAssetsAsync<Beys>("Main", Mblades => BBlade.Add(Mblades)).Completed += OnLoaded;
+        Addressables.LoadAssetsAsync<Beys>("UX", bladeu => UBlade.Add(bladeu)).Completed += OnLoaded;
+        Addressables.LoadAssetsAsync<Beys>("Over", Oblade => Overblade.Add(Oblade)).Completed += OnLoaded;
+        Addressables.LoadAssetsAsync<Beys>("Assist", Ablade => Assistblade.Add(Ablade)).Completed += OnLoaded;
+        Addressables.LoadAssetsAsync<Beys>("Main", Mblade => Mainblade.Add(Mblade)).Completed += OnLoaded;
     }
 
     void OnLoaded(AsyncOperationHandle<IList<Beys>> handle)
     {
         if(handle.Status == AsyncOperationStatus.Succeeded)
         {
-            for(int i = 0; i < bladeS.Count; i++)
+            for(int i = 0; i < Mainblade.Count; i++)
             {
-                Debug.Log($"Blade: {bladeS[i].NameP()}");
+                Debug.Log($"Blade: {Mainblade[i].namePart}");
             }
 
-            for(int i = 0; i < bladeU.Count; i++)
+            for(int i = 0; i < UBlade.Count; i++)
             {
-                Debug.Log($"Blade UX: {bladeU[i].NameP()}");
+                Debug.Log($"Blade UX: {UBlade[i].namePart}");
             }
 
-            for(int i = 0; i < bladeA.Count; i++)
+            for(int i = 0; i < Assistblade.Count; i++)
             {
-                Debug.Log($"Assist Blade: {bladeA[i].NameP()}");
+                Debug.Log($"Assist Blade: {Assistblade[i].namePart}");
             }
 
-            for(int i = 0; i < bladeO.Count; i++)
+            for(int i = 0; i < Overblade.Count; i++)
             {
-                Debug.Log($"Over Blade: {bladeO[i].NameP()}");
-            }
-
-            for(int i = 0; i < bladeM.Count; i++)
-            {
-                Debug.Log($"Main Blade: {bladeM[i].NameP()}");
+                Debug.Log($"Over Blade: {Overblade[i].namePart}");
             }
         }
     }

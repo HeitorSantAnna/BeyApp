@@ -3,38 +3,30 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "BeysParts/Lock Chip")]
 public class LockChips : Beys
 {
-    public LockChip lockChip;
+    public bool IsMetal;
 
     public override string NameP()
     {
-    return $"{lockChip}";
+        return namePart;
+    }
+
+    public override int IDBey()
+    {
+        return ID;
+    }
+
+    public override TypeBey Type()
+    {
+        return typeBey;
+    }
+
+    public override bool TurnLeft()
+    {
+        return Turnleft;
+    }
+
+    public override TypePart TypeP()
+    {
+        return typePart;
     }
 }
-
-public enum LockChip
-    {
-        Bahamut,
-        Brachio,
-        Bucks,
-        Cerberus,
-        Dran,
-        Drake,
-        Emperor,
-        Fox,
-        Hells,
-        Hornet,
-        Knight,
-        Kraken,
-        Leon,
-        Pegasus,
-        Perseus,
-        Phoenix,
-        Ragna,
-        Rhino,
-        Sol,
-        Unicorn,
-        Valkyrie,
-        Whale,
-        Wizard,
-        Wolf
-    }

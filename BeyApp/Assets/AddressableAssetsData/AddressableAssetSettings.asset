@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: d4949e89dc369114e8436452b306066f
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: 95495bb506548807e54ec5fe5ef27e8b
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -98,17 +98,14 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - default
-    - RechedObjects
-    - DReched
-    - SReched
-    - SBit
-    - RBit
-    - MainBlade
     - Assist
     - Over
-    - BBlade
-    - UBlade
+    - Main
+    - Bit
+    - Chip
+    - UX
+    - BX
+    - Reched
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 7a6e28d520c76f8459fcbdcbe5a19794, type: 2}

@@ -3,40 +3,43 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "BeysParts/Bit")]
 public class Bit : Beys
 {
-    public SystemBit Sbit;
+    public bool IsSimple;
 
     public TypeBit typeBit;
 
-    public bool IsSimple;
-
     public override string NameP()
     {
-        if(!IsSimple)
-        {
-            return $"{Sbit}{nameParts}";
-        }
-        else
-        {
-            return $"{Sbit}";
-        }
+        return namePart;
     }
-}
 
-public enum SystemBit
-{
-    Normal,
-    Under,
-    Flat,
-    Gear,
-    Free,
-    High,
-    BitplusReched
+    public override TypeBey Type()
+    {
+        return typeBey;
+    }
+
+    public override int IDBey()
+    {
+        return ID;
+    }
+
+    public override bool TurnLeft()
+    {
+        return Turnleft;
+    }
+
+    public override TypePart TypeP()
+    {
+        return typePart;
+    }
 }
 
 public enum TypeBit
 {
-    Ataque,
-    Defesa,
-    Resistência,
-    Equilibrio
+    Normal,
+    Free,
+    High,
+    Under,
+    Gear,
+    Low,
+    Trans
 }

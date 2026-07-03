@@ -5,22 +5,31 @@ public class Reched : Beys
 {
     public Number number;
 
-    public bool IsSimple;
-
-    public HeightD heightD;
-
-    public HeightS heightS;
+    public Height height;
 
     public override string NameP()
     {
-        if(IsSimple)
-        {
-            return nameParts = $"{number}-{heightS}";
-        }
-        else
-        {
-            return $"{number}-{heightD}";
-        }
+        return $"{number}-{height}";
+    }
+
+    public override int IDBey()
+    {
+        return ID;
+    }
+
+    public override TypeBey Type()
+    {
+        return typeBey;
+    }
+
+    public override bool TurnLeft()
+    {
+        return Turnleft;
+    }
+
+    public override TypePart TypeP()
+    {
+        return typePart;
     }
 }
 
@@ -37,19 +46,15 @@ public enum Number
     Nove = 9
 }
 
-public enum HeightD
-{
-    Cinquenta = 50,
-    Sessenta = 60,
-    Setenta = 70,
-    Oitenta = 80
-}
-
-public enum HeightS
+public enum Height
 {
     QuarentaCinco = 45,
+    Cinquenta = 50,
     CinquentaCinco = 55,
+    Sessenta = 60,
     SessantaCinco = 65,
+    Setenta = 70,
     SetentaCinto = 75,
+    Oitenta = 80,
     OitentaCinco = 85
 }
